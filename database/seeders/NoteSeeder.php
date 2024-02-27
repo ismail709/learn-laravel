@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Note;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class NoteSeeder extends Seeder
 {
@@ -12,6 +13,6 @@ class NoteSeeder extends Seeder
      */
     public function run(): void
     {
-        \App\Models\Note::factory(504)->create();
+        Note::factory(501)->create();
     }
 }

@@ -129,13 +129,5 @@
                 </div>
             </div>
         </div>
-        <div>
-            @foreach ($notes as $note)
-                    <div style="width:400px;margin-bottom:4rem;">
-                        <h1 style="font-size:32px;">{{$note->title}}</h1>
-                        <p style="color:black;">{{$note->text}}</p>
-                    </div>
-            @endforeach
-        </div>
     </body>
 </html>

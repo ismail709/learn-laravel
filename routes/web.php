@@ -15,8 +15,8 @@ use App\Http\Controllers\NoteController;
 */
 
 Route::get('/', function () {
-    $notes = \App\Models\Note::all();
-    return view('welcome',compact("notes"));
+    return view('welcome');
 });
+
 Route::get("/notes",[NoteController::class,"index"]);
 Route::get("/notes/{id}",[NoteController::class,"show"]);
